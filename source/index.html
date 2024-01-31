@@ -14,14 +14,23 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img src="" alt="Логотип компании Cat Energy">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/logo-icon-desktop@1x.png 1x, images/logo-icon-desktop@2x.png 2x" width="70" height="59">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/logo-icon-tablet@1x.png 1x, images/logo-icon-tablet@2x.png 2x" width="60" height="50">
+          <img src="images/logo-icon-mobile@1x.png" srcset="images/logo-icon-mobile@2x.png 2x" alt="Иконка компании Cat Energy" width="33" height="38">
+        </picture>
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/logo-text-desktop@1x.png 1x, images/logo-text-desktop@2x.png 2x" width="118" height="21">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/logo-text-tablet@1x.png 1x, images/logo-text-tablet@2x.png 2x" width="101" height="18">
+          <img src="images/logo-text-mobile@1x.png" srcset="images/logo-text-mobile@2x.png 2x" alt="Логотип компании Cat Energy" width="101" height="18">
+        </picture>
       </a>
       <nav class="main-header__navigation main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a>главная</a></li>
-          <li class="main-nav__item"><a>каталог продукции</a></li>
-          <li class="main-nav__item"><a>подбор программы</a></li>
+          <li class="main-nav__item"><a href="#">главная</a></li>
+          <li class="main-nav__item"><a href="#">каталог продукции</a></li>
+          <li class="main-nav__item"><a href="#">подбор программы</a></li>
         </ul>
       </nav>
     </header>
@@ -79,19 +88,21 @@
             <span class="data__text">15 000 руб.</span>
           </p>
         </div>
-        <iframe class="example__demo" src="" frameborder="0"></iframe>
+        <iframe class="example__demo"></iframe>
       </section>
     </main>
     <footer class="main-footer">
-      <iframe class="main-footer__map" src="" frameborder="0"></iframe>
+      <iframe class="main-footer__map"></iframe>
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href=""><img src="" alt=""></a>
-        <div class="main-footer__socials socials">
-          <a href=""><img src="" alt="вконтакте"></a>
-          <a href=""><img src="" alt="ютуб"></a>
-          <a href=""><img src="" alt="телеграм"></a>
-        </div>
-        <a class="main-footer__academy" href=""><img src="" alt="логотип html академии"></a>
+        <a class="main-footer__logo" href="#">
+          <img src="images/footer-logo@2x.png" width="128" height="24" alt="Логотип магазина">
+        </a>
+        <!-- <div class="main-footer__socials socials">
+          <a href="#"><img width="28" height="22" alt="вконтакте"></a>
+          <a href="#"><img width="28" height="22" alt="ютуб"></a>
+          <a href="#"><img width="28" height="22" alt="телеграм"></a>
+        </div> -->
+        <!-- <a class="main-footer__academy" href="#"><img width="128" height="24" alt="логотип html академии"></a> -->
       </div>
     </footer>
   </body>
